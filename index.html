@@ -8,5 +8,8 @@
     <title>Page</title>
     <h1>H1</h1>
     <a href=".netlify/functions/hello">Hello</a>
+    <script>
+          fetch("/.netlify/functions/hello").then(result => result.json()).then(console.log);
+    </script>
   </body>
 </html>
